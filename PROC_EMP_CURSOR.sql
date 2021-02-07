@@ -10,7 +10,7 @@ BEGIN  OPEN c_emp_cursor;
   LOOP
     FETCH c_emp_cursor INTO l_empno, l_lname;
     EXIT WHEN c_emp_cursor%NOTFOUND;
-    DBMS_OUTPUT.PUT_LINE( l_empno ||' for '||l_lname);  
+    DBMS_OUTPUT.PUT_LINE( l_empno ||' for this person '||l_lname);  
   END LOOP;
 EXCEPTION
 WHEN NO_DATA_FOUND THEN
