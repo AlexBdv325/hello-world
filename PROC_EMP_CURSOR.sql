@@ -14,5 +14,5 @@ BEGIN  OPEN c_emp_cursor;
   END LOOP;
 EXCEPTION
 WHEN NO_DATA_FOUND THEN
-DBMS_OUTPUT.PUT_LINE("The query with local did not return a result');
+DBMS_OUTPUT.PUT_LINE('The query with local did not return a result');
 END;
